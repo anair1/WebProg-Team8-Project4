@@ -43,7 +43,8 @@ body {
 }
 
 .CC-num,
-.cvv-entry input,
+.card-entry input,
+.cvv-entry,
 .mm select,
 .yy select,
 .name {
@@ -71,3 +72,4 @@ body {
 .yy {
     flex: 75;
 }
+

@@ -3,6 +3,7 @@
 <head>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,100' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="card-styles.css">
+    <script src="cardValidator.js"></script>
 </head>
 <body>
 <form class="CC">
@@ -11,13 +12,12 @@
   </div>
     <div class="form-body">
         <input type="text" class="name" placeholder="Name">
-        <input type="text" class="CC-num" placeholder="Card Number">
         <div class="card-validator">
-            <div class="cvv-entry">
-                <input type="password" placeholder="CVV">
+            <div class="card-entry">
+                <input type="text" class="CC-num" placeholder="Card Number">
             </div>
         </div>
-
+        <input type="password" class="cvv-entry" placeholder="CVV">
         <div class="year-entry">
             <div class="mm">
                 <select name="MM">
@@ -53,7 +53,8 @@
             </div>
         </div>
       <br />
-      <button type="submit" class="submit-btn" style="color: white"><a href="#">Continue</a></button>
+      <button type="submit" class="submit-btn" style="color: white" onclick="update("document.getElementById("CC-num")".value);">Continue</button>
+      <span style="color:black;" id="valid">Invalid Card Number</span>
     </div>
   </div>
 </form>
