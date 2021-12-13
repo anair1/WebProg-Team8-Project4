@@ -1,0 +1,73 @@
+* {
+    box-sizing: border-box;
+}
+
+.title {
+    font-size: 16px;
+    margin: 0;
+    color: #ffffff;
+}
+ 
+body,
+html {
+    height: 100%;
+    min-height: 100%;
+}
+ 
+body {
+    font-family: 'sans-serif',
+    sans-serif;
+    margin: 0;
+    background-color: #e7e7e7;
+}
+
+.CC {
+    width: 250px;
+    height: 300px;
+    margin: 50px auto 0;
+    border: 1px solid rgb(65, 115, 138);
+    border-radius: 6px;
+    background-color: rgb(119, 125, 143);
+    box-shadow: 1px 2px 3px 0 rgba(99, 19, 133, 0.1);
+}
+
+.form-hd {
+    height: 60px;
+    padding: 20px 30px 0;
+    border-bottom: 1px solid #6290b8;
+}
+ 
+.form-body {
+    height: 340px;
+    padding: 30px 30px 20px;
+}
+
+.CC-num,
+.cvv-entry input,
+.mm select,
+.yy select,
+.name {
+    opacity: .7;
+    color: #86939e;
+}
+
+.submit-btn {
+    cursor: pointer;
+    font-size: 13px;
+    width: 100%;
+    border-color: transparent;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background: rgb(88, 153, 203);
+    color: white;
+}
+
+.year-entry {
+    display: flex;
+}
+.mm {
+    width: 25%;
+}
+.yy {
+    flex: 75;
+}
